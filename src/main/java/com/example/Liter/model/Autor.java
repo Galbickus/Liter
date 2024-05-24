@@ -1,6 +1,8 @@
 package com.example.Liter.model;
 
 
+
+
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -66,15 +68,5 @@ public class Autor {
     public void setLibros(List<Libro> libros) {
         libros.forEach(l -> l.setAutor(this));
         this.libros = libros;
-    }
-
-    @Override
-    public String toString() {
-        return "\n------------ Autor ------------\n" +
-                "id=" + id +
-                "Nombre='" + nombre + '\n' +
-                "Año de nacimiento=" + nacimiento +
-                "Año de fallecimiento=" + fallecimiento +
-                "\n-----------------------------------\n";
     }
 }
