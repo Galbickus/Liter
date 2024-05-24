@@ -21,5 +21,6 @@ public class LiterApplication implements CommandLineRunner {
 		System.out.println(json);
 		ConvierteDatos conversor = new ConvierteDatos();
 		var datos = conversor.obtenerDatos(json, DatosLibro.class);
+		System.out.println(datos);
 	}
 }
