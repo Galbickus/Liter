@@ -1,5 +1,6 @@
 package com.example.Liter;
 
+import com.example.Liter.service.ConsumoAPI;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,5 +14,8 @@ public class LiterApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		var consumoApi = new ConsumoAPI();
+		var json = consumoApi.obtenerDatos("https://gutendex.com/books/");
+		System.out.println(json);
 	}
 }
