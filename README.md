@@ -8,5 +8,6 @@ App Literalura
 
  ## Requisitos
 ## BD
-![image](https://github.com/Galbickus/Liter/assets/135274833/5a44f53e-685d-47c6-9347-2b94b3667fdc)
+![image](https://github.com/Galbickus/Liter/assets/135274833/69c9c0fc-b848-4d9c-aff1-faa4ab715456)
+
 
