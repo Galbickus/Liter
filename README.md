@@ -28,5 +28,5 @@ Utiliza las siguientes tecnologías y herramientas:
 
 ## Videito
 
-https://github.com/Galbickus/Liter/assets/135274833/93717eb5-2978-49cf-9c85-7e15d5517353
+https://github.com/Galbickus/Liter/assets/135274833/0068823d-8940-4ba0-9234-ec8c06cd062b
 
