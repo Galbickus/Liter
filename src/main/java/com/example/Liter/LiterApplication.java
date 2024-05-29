@@ -1,26 +1,23 @@
 package com.example.Liter;
 
-import com.example.Liter.model.DatosLibro;
-import com.example.Liter.service.ConsumoAPI;
-import com.example.Liter.service.ConvierteDatos;
+import com.example.Liter.repository.AutorRepository;
+import com.example.Liter.principal.Principal;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class LiterApplication implements CommandLineRunner {
-
+	@Autowired
+	private AutorRepository repository;
 	public static void main(String[] args) {
 		SpringApplication.run(LiterApplication.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		var consumoApi = new ConsumoAPI();
-		var json = consumoApi.obtenerDatos("https://gutendex.com/books/");
-		System.out.println(json);
-		ConvierteDatos conversor = new ConvierteDatos();
-		var datos = conversor.obtenerDatos(json, DatosLibro.class);
-		System.out.println(datos);
+		Principal principal = new Principal(repository);
+		principal.mostrarMenu();
 	}
 }
