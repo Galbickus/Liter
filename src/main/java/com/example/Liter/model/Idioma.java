@@ -3,8 +3,7 @@ package com.example.Liter.model;
 public enum Idioma {
     ES("es"),
     FR("fr"),
-    EN("en"),
-    PT("pt");
+    EN("en");
 
     private String idioma;
 

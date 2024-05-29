@@ -1,8 +1,5 @@
 package com.example.Liter.model;
 
-
-
-
 import jakarta.persistence.*;
 
 import java.util.List;
